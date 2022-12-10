@@ -1,0 +1,65 @@
+
+ .write-comment{
+    margin-top: 20px;
+    margin-left: 10%;
+    display: flex;
+    gap: 10px;
+}
+.content{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input{
+        width: 450px;
+        padding: 10px;
+        border: 1px solid lightgray;
+    }
+    .editContainer{
+      
+       width: 650px;
+           
+    
+    
+
+    }
+    .buttons{
+        margin-top: 50px;
+        .button-send{
+            background-color: #98bcf3;
+            border: none;
+            font-size: 16px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80px;
+            cursor: pointer;
+
+        }
+        .button-send:hover{
+            background-color: #196be6;;
+            }
+        .button-cancel{
+            background-color: #eeb8a4;
+            margin-left: 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80px;
+            cursor: pointer;
+
+        }
+        .button-cancel:hover{
+            background-color: #a36c58;
+            }
+    }
+
+}
+.menu{
+    flex:2;
+    font-display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+

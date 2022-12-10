@@ -1,0 +1,102 @@
+.home{ 
+    position: relative;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+
+    .bottom {
+        margin-left: 10px;
+        position: absolute;
+        position: fixed;
+        border-top-left-radius: 10px;
+        padding: 20px;
+        right: 15px;
+        bottom: 0;
+        max-height:400px;
+        width: 380px;
+        background-color: #ece5dd;
+        word-wrap: break-word;
+        overflow-y: scroll;
+        z-index: 1;
+      }
+
+
+    .box{
+        max-width: 800px;
+        border: solid black 1px;
+        margin-bottom: 10px;
+        background-color: rgb(228, 228, 212);
+        border-radius: 10px;}
+    .box:nth-of-type(2n + 1) {
+        background-color: rgb(249, 245, 245);
+
+      }
+.comment-profil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+
+
+    .comment-items{
+        display: flex;
+        flex: 1;
+        margin-left: 20px;
+        justify-content: center;
+        flex-direction: column;
+  
+        .img{
+            img{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                object-fit: cover;
+               
+            }
+        }
+       .item1{
+        margin-left: 10px;
+            color:red;    
+        }
+        .item2{
+            color:blue;    
+        }
+
+
+        }
+    }
+.content{
+    flex : 4;
+    display: flex;   
+    justify-content: center;
+    width: 200px;
+
+    .title{
+        
+       
+    }
+
+    .text{
+     
+        margin-top: -80px;
+   
+        
+    }
+
+
+}
+.numberOfReplies{
+    margin-right:5px ;
+    background-color: red;
+    color:white;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right : 5px;
+    border-radius: 10px;
+}
+
+}

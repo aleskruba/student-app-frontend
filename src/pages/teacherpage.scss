@@ -1,0 +1,86 @@
+.main{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 100vh;
+
+    .students{
+        flex:1;      
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        background-image: linear-gradient(#B91372, #6B0F1A);
+        border: 1px solid black;
+        border-radius: 10px;
+            .input{
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                padding-left: 10px;
+                width: 200px;
+                border-radius: 10px;
+                height: 25px;
+            }
+            table{
+            
+                display: flex;
+                flex-direction: column;
+          
+                
+            }
+            thead{
+                padding-left: 10px;
+                margin-top: 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: lightblue;
+                font-size: 18px;
+                font-family: sans-serif;
+                text-align: left;
+                .username{
+                    width: 150px;
+                }
+                .email{
+                    width: 150px;
+                }
+            }
+            tbody{
+                padding-left: 10px;
+                text-align: left;
+                margin-top: 10px;
+                background-color: bisque;
+                border: 1px solid black;
+                border-radius: 10px;
+                font-size: 16px;
+                font-family: sans-serif;
+                text-decoration: none;
+                td{
+                    border-bottom: 1px dotted black;
+                    cursor: pointer;
+                    padding: 5px;
+                }
+                .username{
+                    width: 150px;
+                }
+                .email{
+                    width: 150px;
+                }
+            }
+
+           }
+    .img{
+        display: flex;
+        flex:3;
+        padding-left: 10px;
+    
+        img{
+            border: 1px solid black;
+      border-radius: 10px;
+
+            width: 100%;
+            object-fit: cover
+        }
+    }
+
+}

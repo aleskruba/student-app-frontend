@@ -1,0 +1,247 @@
+$lighttblue : #98bcf3;
+
+.home{ 
+
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+
+  
+    .box{
+        margin-right: 4%;
+        min-width: 400px;
+        border: solid black 1px;
+        margin-bottom: 10px;
+        background-color: rgb(228, 228, 212);
+        border-radius: 10px;}
+
+        .comment-profil{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin-bottom: 10px;
+            border-radius: 10px;
+
+
+
+            .comment-items{
+                display: flex;
+                flex: 1;
+                margin-left: 20px;
+                justify-content: center;
+                flex-direction: column;
+  
+        .img{
+            img{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                object-fit: cover;
+               
+            }
+        }
+       .item1{
+        margin-left: 10px;
+            color:red;    
+        }
+        .item2{
+            color:blue;    
+        }
+
+
+        }
+    }
+    
+.content{
+    flex : 4;
+    display: flex;   
+    justify-content: center;
+    width: 200px;
+   
+
+    .titlereply{
+       
+       
+    }
+
+    .quillLengthreply{
+
+    }
+
+    .editContainer{
+        margin-left: -50px;
+        background-color: white;
+        width: auto;
+        margin-right: 20px;  
+        
+     }
+
+
+       .buttonsItem{
+            margin-top: 50px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 30%;
+            align-items: center;
+        }
+        .button-cancel{
+            margin-right: 50px;
+            background-color: #eeb8a4;
+            margin-left: 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80px;
+            cursor: pointer;
+
+        }
+        .button-cancel:hover{
+            background-color: #a36c58;
+            }
+            .button-send{
+                background-color: #98bcf3;
+                border: none;
+                font-size: 16px;
+                border-radius: 10px;
+                padding: 10px;
+                width: 80px;
+                cursor: pointer;
+            }
+            .button-send:hover{
+                background-color: #196be6;;
+                }
+
+    .buttons{
+        margin-top: -35px;
+        .button-reply{
+            background-color: #98bcf3;
+            border: none;
+            font-size: 16px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80px;
+            cursor: pointer;
+
+        }
+        .button-reply:hover{
+            background-color: #196be6;;
+            }
+
+            
+.button-delete{
+    background-color: rgb(223, 125, 125);   
+    margin-left: 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+
+}
+.button-delete:hover{
+    background-color:red;
+    }
+
+    }
+       
+ 
+    }
+
+
+
+
+.box1{
+    margin-left: 4%;
+    min-width: 400px;
+    border: solid black 1px;
+    margin-bottom: 10px;
+    background-color: rgb(228, 228, 212);
+    border-radius: 10px;}
+
+            .comment-profil1{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 10px;
+            border-radius: 10px;
+
+
+
+            .comment-items1{
+                display: flex;
+                flex: 1;
+                margin-left: 20px;
+                justify-content: center;
+                flex-direction: column;
+
+                .img{
+                    img{
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    
+                    }
+                }
+            .item1{
+                margin-left: 10px;
+                    color:red;    
+                }
+                .item2{
+                    color:blue;    
+                }
+
+
+                }
+            }
+
+                    .content1{
+                    flex : 4;
+                    display: flex;         
+                    flex-direction: column;
+                    word-wrap: break-word;
+                    width: 200px;
+
+                    .title{
+                 
+                    
+                    }
+
+                    .quillLengthreply{
+                    
+                                       color: red;
+                
+                    }
+.buttons{
+
+.button-delete{
+    background-color: rgb(223, 125, 125);   
+    margin-left: 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+
+}
+.button-delete:hover{
+    background-color:red;
+    }
+}
+
+
+
+
+
+}
+
+
+}
+
+

@@ -1,0 +1,30 @@
+.chatbox{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.p-receiver{
+    padding: 10px;
+    background-color:#dcf8c6;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.strong{
+    font-size: 13;
+}
+
+.chatboxSender{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+}
+
+.p-sender{
+    padding: 10px;
+    background-color:#fff;
+    border-radius: 10px;
+    max-width: 60%;
+}

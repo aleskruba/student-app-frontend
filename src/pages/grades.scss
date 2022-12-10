@@ -1,0 +1,48 @@
+.mainGrades{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    .results{
+        text-align: center;
+       font-size: 25px;
+         }
+
+    .GradesArray{
+        justify-content: space-around;
+        flex-grow: 1;
+        margin-left: 10px;
+        padding: 10px;
+   
+        
+        table{
+            width: 100%;
+            border: 1px solid black;
+         }
+         th {
+            height: 70px;
+            border: 1px solid black;
+          }
+          .username{
+            width: 150px;
+        }
+          .grade{
+            width: 100px;
+          }
+          .date{
+            width: 150px;
+          }
+          td {
+            height: 70px;
+            border: 1px solid black;
+          }
+          .grade1{
+            font-size: 20px;
+            font-style: oblique;
+            font-weight: bold;
+            
+          }
+    }
+
+}
