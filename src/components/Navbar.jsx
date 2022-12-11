@@ -10,7 +10,8 @@ export default function Navbar(props) {
   const {currentUser,logout,updatedProfile,setUpdatedProfile}= useContext(AuthContext)
 
   useEffect(()=>{
-    setUpdatedProfile(currentUser)
+    if (currentUser) {
+    setUpdatedProfile(currentUser) }
   },[])
 
   useEffect(()=>{ 
