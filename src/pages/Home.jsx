@@ -55,7 +55,7 @@ export default function Home() {
     </div>
 
   
-      <HomeComp  currentPost={currentPost}/>
+    //  <HomeComp  currentPost={currentPost}/>
 
    
   
