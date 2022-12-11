@@ -15,7 +15,7 @@ export default function Grades() {
   useEffect(()=>{
     const fetchData = async () => {
       try{
-          const res = await axios.get(`https://studend-app-backend-production.up.railway.app/grades/${id}`)
+          const res = await axios.get(`https://studend-app-backend-production.up.railway.app/api/grades/${id}`)
           setGrades(res.data)
   
      
