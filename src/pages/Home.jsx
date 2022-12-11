@@ -23,7 +23,7 @@ export default function Home() {
 
       try{
      
-        const res = await axios.get('https://studend-app-backend-production.up.railway.app/api/comments')
+        const res = await axios.get('/comments')
 
         setComments(res.data)
       }catch(err){
