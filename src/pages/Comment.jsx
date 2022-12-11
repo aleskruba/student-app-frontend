@@ -20,7 +20,7 @@ export default function Comment() {
     e.preventDefault();
 
     try{
-        await axios.post(`/comments`,{
+        await axios.post(`https://studend-app-backend-production.up.railway.app/api/comments`,{
           title:title,
           comment:value,
           date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss")
