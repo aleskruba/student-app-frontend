@@ -100,7 +100,7 @@ const handleSubmit = async (e) =>{
   e.preventDefault();
 
   try{
-      await axios.post('https://studend-app-backend-production.up.railway.app/replies/',{
+      await axios.post('https://studend-app-backend-production.up.railway.app/replies',{
         comment:value,
         date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss"),
         uidcomment:comment.id,
