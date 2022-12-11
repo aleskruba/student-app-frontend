@@ -39,7 +39,7 @@ export default function Students() {
     useEffect(()=>{
       const fetchData = async () => {
         try{
-      const resUser = await axios.get(`https://studend-app-backend-production.up.railway.app/auth/users/${id}`)
+      const resUser = await axios.get(`https://studend-app-backend-production.up.railway.app/api/auth/users/${id}`)
           setUser(resUser.data[0])
         }catch(err){
       console.log(err)
@@ -51,7 +51,7 @@ export default function Students() {
     useEffect(()=>{
         const fetchData = async () => {
           try{     
-            const res = await axios.get(`https://studend-app-backend-production.up.railway.app/grades/${id}`)
+            const res = await axios.get(`https://studend-app-backend-production.up.railway.app/api/grades/${id}`)
       
             setGradesArray(res.data)
          
@@ -77,7 +77,7 @@ export default function Students() {
 
               try{
                 setIsLoading(true)
-              await axios.post('https://studend-app-backend-production.up.railway.app/grades',{grade:grade,
+              await axios.post('https://studend-app-backend-production.up.railway.app/api//grades',{grade:grade,
                                     id,
                                     note:note,
                                     date:moment(Date.now()).format("YYYY-MM-DD HH:mm:ss") })
@@ -99,7 +99,7 @@ export default function Students() {
                   delID: delID
           }
             try{
-            await axios.delete(`https://studend-app-backend-production.up.railway.app/grades/${delID}`,{data})
+            await axios.delete(`https://studend-app-backend-production.up.railway.app/api/grades/${delID}`,{data})
                 const newGradeObject = [...gradesArray].filter(con => con.id !== delID)
                 setGradesArray(newGradeObject)
                 setIsLoading(false)
@@ -174,7 +174,7 @@ const handleEditFormGradeSubmit = async (e) => {
       const e_grade = input.grade  
     
       try {
-          await axios.put(`https://studend-app-backend-production.up.railway.app/grades/${editFormGradeData.id}`,{e_gradeID, e_note, e_grade }).
+          await axios.put(`https://studend-app-backend-production.up.railway.app/api/grades/${editFormGradeData.id}`,{e_gradeID, e_note, e_grade }).
             then(()=>setGradesArray(newGrade))
             .catch((err)=>console.log(err.response.data))
             setEditGradeId(null);
@@ -210,7 +210,7 @@ const handleEditFormGradeSubmit = async (e) => {
 
  //    
  //    try{
- //    await axios.put(`https://studend-app-backend-production.up.railway.app/grades/${editFormGradeData.id}`,{e_gradeID, e_uidGrade, e_datum, e_note, e_grade }).
+ //    await axios.put(`https://studend-app-backend-production.up.railway.app/api/grades/${editFormGradeData.id}`,{e_gradeID, e_uidGrade, e_datum, e_note, e_grade }).
  //      then(()=>setGradesArray(newGrade))
  //     .catch((err)=>console.log(err.response.data))
  //           setEditGradeId(null);
@@ -237,7 +237,7 @@ const deleteUser = async (id) =>{
   if(window.confirm("Are you sure that you want to delete this user ?")) {
 
   try{
-      await axios.delete(`https://studend-app-backend-production.up.railway.app/auth/${id}`)
+      await axios.delete(`https://https://studend-app-backend-production.up.railway.app/api/auth/${id}`)
                        navigate('/')
       }catch(err){
         console.log(err)
