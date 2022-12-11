@@ -19,7 +19,7 @@ export default function Navbar(props) {
 
     const fetchData = async () => {
       try{
-        const res = await axios.get('/users')
+        const res = await axios.get('https://studend-app-backend-production.up.railway.app/users')
        
        setUpdatedProfile(res.data[0])
       
