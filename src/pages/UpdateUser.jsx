@@ -52,7 +52,7 @@ if (params.id!=currentUser.id){
           const formData = new FormData()
           formData.append("file",file)
             if (file)
-                {const res = await axios.post("/upload",formData)
+                {const res = await axios.post("https://studend-app-backend-production.up.railway.app/upload",formData)
                 return res.data}
             else {
               return;
@@ -91,7 +91,7 @@ if (params.id!=currentUser.id){
       
 
         try{
-            await axios.put(`/auth/updateUser/${currentUser.id}`,
+            await axios.put(`https://studend-app-backend-production.up.railway.app/auth/updateUser/${currentUser.id}`,
                
                 {...inputs,img: file ? imgUrl:""}) //,{img: file ? imgUrl:""}
                   navigate('/')
