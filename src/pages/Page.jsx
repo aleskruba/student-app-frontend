@@ -27,7 +27,7 @@ export default function Page() {
   useEffect(()=>{
     const fetchData = async () => {
       try{
-        const res = await axios.get(`https://studend-app-backend-production.up.railway.app/comments/${commentID}`)
+        const res = await axios.get(`https://studend-app-backend-production.up.railway.app/api/comments/${commentID}`)
              setComment(res.data)
   
       }catch(err){
@@ -42,7 +42,7 @@ export default function Page() {
   useEffect(()=>{
     const fetchData = async () => {
       try{
-        const response = await axios.get('https://studend-app-backend-production.up.railway.app/replies')
+        const response = await axios.get('https://studend-app-backend-production.up.railway.app/api//replies')
         setReplies(response.data)
      
       }catch(err){
@@ -55,7 +55,7 @@ export default function Page() {
   const handleDelete = async () => {
     if(window.confirm("Are you sure that you want to delete this comment ?")) {
     try{
-     await axios.delete(`https://studend-app-backend-production.up.railway.app/comments/${commentID}`)
+     await axios.delete(`https://studend-app-backend-production.up.railway.app/api/comments/${commentID}`)
       navigate('/')
 
     }catch(err){
@@ -73,7 +73,7 @@ export default function Page() {
       replyID: replyID
     }
     try{
-     await axios.delete(`https://studend-app-backend-production.up.railway.app/replies/${replyID}`,{data})
+     await axios.delete(`https://studend-app-backend-production.up.railway.app/api/replies/${replyID}`,{data})
      const newReplyObject = [...replies].filter(con => con.id !== replyID)
      setReplies(newReplyObject)
      
@@ -100,7 +100,7 @@ const handleSubmit = async (e) =>{
   e.preventDefault();
 
   try{
-      await axios.post('https://studend-app-backend-production.up.railway.app/replies',{
+      await axios.post('https://studend-app-backend-production.up.railway.app/api/replies',{
         comment:value,
         date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss"),
         uidcomment:comment.id,
