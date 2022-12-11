@@ -8,7 +8,7 @@ import HomeComp from './HomeComp'
 import Pagination from './Pagination'
 import { AuthContext } from '../context/authContext'
 import { message } from 'antd'
-import ChatContainer from '../socket/ChatContainer'
+
 
 export default function Home() {
 
@@ -51,11 +51,11 @@ export default function Home() {
  
     <div className='home'>
       <div className="bottom">
-    <ChatContainer />
+    
     </div>
 
   
-    //  <HomeComp  currentPost={currentPost}/>
+  <HomeComp  currentPost={currentPost}/>
 
    
   
