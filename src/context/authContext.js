@@ -21,7 +21,7 @@ export const AuthContextProvider = ({children}) =>{
 }
 
     const logout = async(inputs) =>{
-         await axios.post("https://studend-app-backend-production.up.railway.app/auth/logout") 
+         await axios.post("/auth/logout") 
         setCurrentUser(null)
       }
 
