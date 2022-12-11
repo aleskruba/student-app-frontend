@@ -18,7 +18,7 @@ export default function Teacherpage() {
     useEffect(()=>{
         const fetchData = async () => {
           try{
-            const res = await axios.get('/teacher')
+            const res = await axios.get('https://studend-app-backend-production.up.railway.app/teacher')
  
             setUsers(res.data)
           }catch(err){
