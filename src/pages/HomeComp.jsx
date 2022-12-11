@@ -16,7 +16,7 @@ export default function HomeComp({currentPost}) {
   useEffect(()=>{
     const fetchData = async () => {
       try{
-        const response = await axios.get('/replies')
+        const response = await axios.get('https://studend-app-backend-production.up.railway.app/api/replies')
         setReplies(response.data)
      
       }catch(err){
