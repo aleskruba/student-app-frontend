@@ -14,7 +14,7 @@ export const AuthContextProvider = ({children}) =>{
 
 
  const login = async(inputs)=> {
-     const res = await axios.post("https://studend-app-backend-production.up.railway.app/api/auth/login",inputs)
+     const res = await axios.post("/auth/login",inputs)
     setCurrentUser(res.data)
   
 
