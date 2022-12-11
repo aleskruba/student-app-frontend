@@ -28,7 +28,7 @@ export default function Register() {
     const isValidEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
       try {
-        await axios.post("/auth/register",inputs)
+        await axios.post("https://studend-app-backend-production.up.railway.app/auth/register",inputs)
         navigate('/login')
       }catch(err){
 
