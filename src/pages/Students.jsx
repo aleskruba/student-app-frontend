@@ -39,7 +39,9 @@ export default function Students() {
     useEffect(()=>{
       const fetchData = async () => {
         try{
-      const resUser = await axios.get(`https://studend-app-backend-production.up.railway.app/api/auth/users/${id}`)
+      const resUser = await axios.get(`https://studend-app-backend-production.up.railway.app/api/auth/users/${id}`,{
+        id:id
+      })
           setUser(resUser.data[0])
         }catch(err){
       console.log(err)
