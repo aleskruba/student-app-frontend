@@ -42,7 +42,7 @@ export default function Page() {
   useEffect(()=>{
     const fetchData = async () => {
       try{
-        const response = await axios.get('https://studend-app-backend-production.up.railway.app/api//replies')
+        const response = await axios.get('https://studend-app-backend-production.up.railway.app/api/replies')
         setReplies(response.data)
      
       }catch(err){
