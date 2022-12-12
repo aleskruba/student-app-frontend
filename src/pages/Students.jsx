@@ -77,7 +77,7 @@ export default function Students() {
 
               try{
                 setIsLoading(true)
-              await axios.post('https://studend-app-backend-production.up.railway.app/api//grades',{grade:grade,
+              await axios.post('https://studend-app-backend-production.up.railway.app/api/grades',{grade:grade,
                                     id,
                                     note:note,
                                     date:moment(Date.now()).format("YYYY-MM-DD HH:mm:ss") })
