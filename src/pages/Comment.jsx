@@ -1,6 +1,6 @@
 import axios from 'axios';
 import moment from 'moment';
-import React,{useState} from 'react'
+import React,{useContext,useState} from 'react'
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { Link } from 'react-router-dom'
@@ -9,18 +9,22 @@ import { useNavigate} from 'react-router-dom'
 import { API_URL } from "../index.js";
 
 axios.defaults.withCredentials = true;
+import { AuthContext } from '../context/authContext'
 
 export default function Comment() {
   const [value, setValue] = useState('');
   const [title,setTitle] = useState("")
  
   const navigate = useNavigate()
-
+  const {currentUser,updatedProfile} = useContext(AuthContext)
+ 
+  
   const handleSubmit = async (e) =>{
     e.preventDefault();
 
     try{
         await axios.post(`https://studend-app-backend-production.up.railway.app/api/comments`,{
+          id:updatedProfile.id,
           title:title,
           comment:value,
           date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss")
