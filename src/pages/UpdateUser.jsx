@@ -52,7 +52,7 @@ if (params.id!=currentUser.id){
           const formData = new FormData()
           formData.append("file",file)
             if (file)
-                {const res = await axios.post("https://studend-app-backend-production.up.railway.app/api/upload",formData)
+                {const res = await axios.post("https://studend-app-backend-production.up.railway.app/api/auth/upload",formData)
                 return res.data}
             else {
               return;
