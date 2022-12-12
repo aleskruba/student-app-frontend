@@ -7,9 +7,10 @@ import { Link } from 'react-router-dom'
 import './comment.scss'
 import { useNavigate} from 'react-router-dom'
 import { API_URL } from "../index.js";
+import { AuthContext } from '../context/authContext'
+
 
 axios.defaults.withCredentials = true;
-import { AuthContext } from '../context/authContext'
 
 export default function Comment() {
   const [value, setValue] = useState('');
